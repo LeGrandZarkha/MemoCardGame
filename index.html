@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memo</title>
+</head>
+<body>
+    <iframe src="https://giphy.com/embed/fgOgTWJhCyyUcUCm4B" width="480" height="480" style="background-size: cover;" frameBorder="0" id="win-div" class="giphy-embed hidden"></iframe>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="score-text-column">
+            <h2>SCORE</h2><br>
+            <span id="score-text">0</span>
+            </div>
+            <div class="streak-text-column">
+                <div id="streak-text-column-left">
+                </div>
+                <div class="streak-text-column-right">
+                    <div>
+                        <h2>Current Streak</h2><br>
+                        <span id="currentStreak-text">0</span></div></div>
+                    </div>
+            <div class="score-text-column">
+            <h2>Best Streak</h2><br>
+            <span id="bestStreak-text">0</span>
+            </div>
+        </div>
+    <div id="game-board"></div>
+    </div>
+    <button id="restart-button">Restart Game</button>
+    <audio src="../audio/goodPair.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Syne:wght@400..800&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin-top: 3vh;
+    font-family: 'Josefin Sans';
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.score-text-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+}
+
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.score-text-column{
+    width: 20%;
+}
+
+.streak-text-column{
+    width: 40%;
+}
+
+#streak-text-column-left{
+    background-image: url(img/little-flame.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.score-text{
+    font-weight: 300;
+}
+
+.streak-text-column{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.streak-text-column-right{
+    width: 200px;
+    text-align: center;
+}
+
+#streak-text-column-left{
+    width: 50%;
+    height: 100px;
+}
+.streak-text-column-right > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#streak-cat{
+    max-width: 100%;
+    overflow: auto;
+}
+
+#streak-cat iframe{
+    display: block;
+    width: 100%;
+    height: 20%;
+    object-fit: contain;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 10px;
+    margin-bottom: 2vh;
+}
+
+.card{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(162, 162, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.card .flipped{
+    background-color: red;
+}
+
+#win-div{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background-image: url(https://tenor.com/fr/view/confetti-sticker-falling-confetti-festivities-fiesta-gif-17807534);
+}
+
+#restart-button{
+    background-color: rgb(218, 122, 122);
+    width: 10%;
+    height: 40px;
+    color: white;
+    font-size: 1em;
+}
+
+#restart-button:hover{
+    background-color: rgb(183, 63, 63);
+}
+
+iframe{
+    pointer-events: none;
+    display:block;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
